@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Instagram Sans'), url('https://fonts.cdnfonts.com/s/93599/Instagram Sans.woff') format('woff');
+}
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Instagram Sans'), url('https://fonts.cdnfonts.com/s/93599/Instagram Sans Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Instagram Sans'), url('https://fonts.cdnfonts.com/s/93599/Instagram Sans Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Instagram Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Instagram Sans'), url('https://fonts.cdnfonts.com/s/93599/Instagram Sans Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Instagram Sans Headline';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Instagram Sans Headline'), url('https://fonts.cdnfonts.com/s/93599/Instagram Sans Headline.woff') format('woff');
+}
+
+
