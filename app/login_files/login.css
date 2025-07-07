@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: #fafafa;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.login-container {
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  padding: 40px 40px 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 2rem;
+  background: linear-gradient(45deg, #ff00ff, #ff6b6b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 8px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff1493;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(45deg, #ff00ff, #ff6b6b);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 16px 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.login-button:hover {
+  opacity: 0.9;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background: #dbdbdb;
+}
+
+.text {
+  color: #8e8e8e;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 0 18px;
+}
+
+.footer {
+  border-radius: 1px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+@media (max-width: 450px) {
+  .container {
+      margin: 0 20px;
+  }
+
+  .login-container {
+      padding: 20px;
+  }
+
+  .logo h1 {
+      font-size: 2rem;
+  }
+}
