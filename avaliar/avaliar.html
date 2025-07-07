@@ -1609,181 +1609,6 @@
             }
         }
     </style>
-    <!-- CSS para os novos componentes -->
-    <style>
-        /* Indicador de Progresso */
-        .progress-container {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 15px 20px;
-            border-radius: 12px;
-            margin: 10px 0;
-            color: white;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .progress-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        #profile-counter {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .progress-text {
-            font-size: 14px;
-            opacity: 0.9;
-        }
-
-        .progress-bar-container {
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            height: 8px;
-            overflow: hidden;
-        }
-
-        .progress-bar {
-            background: linear-gradient(90deg, #00ff88, #00cc6a);
-            height: 100%;
-            border-radius: 10px;
-            transition: width 0.6s ease;
-            width: 16.67%;
-            /* 1/6 inicial */
-        }
-
-        /* Informações do Perfil Atual */
-        .current-profile {
-            background: white;
-            border-radius: 15px;
-            padding: 15px;
-            margin: 15px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border: 1px solid #f0f0f0;
-        }
-
-        .profile-info {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .profile-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #667eea;
-        }
-
-        .profile-name {
-            font-weight: bold;
-            color: #333;
-            flex: 1;
-        }
-
-        .profile-reward {
-            background: linear-gradient(135deg, #00ff88, #00cc6a);
-            color: white;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-        /* Estatísticas de Ganho */
-        .earnings-stats {
-            background: #f8f9fa;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 15px 0;
-            border: 1px solid #e9ecef;
-        }
-
-        .stat-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 8px 0;
-            border-bottom: 1px solid #e9ecef;
-        }
-
-        .stat-item:last-child {
-            border-bottom: none;
-        }
-
-        .stat-label {
-            color: #666;
-            font-size: 14px;
-        }
-
-        .stat-value {
-            font-weight: bold;
-            color: #333;
-            font-size: 16px;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .progress-container {
-                padding: 12px 15px;
-            }
-
-            .profile-info {
-                gap: 10px;
-            }
-
-            .profile-avatar {
-                width: 40px;
-                height: 40px;
-            }
-
-            .earnings-stats {
-                padding: 15px;
-            }
-        }
-
-        /* Animações */
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .current-profile {
-            animation: slideIn 0.5s ease;
-        }
-
-        /* Estados de transição */
-        .profile-transitioning {
-            opacity: 0.6;
-            pointer-events: none;
-        }
-
-        .profile-transitioning .progress-bar {
-            animation: pulse 1s infinite;
-        }
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.7;
-            }
-        }
-    </style>
 </head>
 
 <body style="margin-top: 0px; overflow-x: hidden" cz-shortcut-listen="true">
@@ -1814,7 +1639,7 @@
                                 conexão</p>
                         </div>
                         <div id="stories" class="w-full px-4 mt-3 flex justify-center"></div>
-
+                        
                         <div class="flex justify-center align-center w-full mt-4">
                             <button
                                 class="w-[90%] h-full relative disabled:opacity-50 transition-all btn-breathe bg-primary font-display rounded-lg px-4 py-3 font-bold text-white z-[2]"
@@ -1893,70 +1718,13 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://go.perfectpay.com.br/PPU38CPQFB8?upsell=true&amp;utm_source=organic&amp;utm_campaign=&amp;utm_medium=&amp;utm_content=&amp;utm_term=&amp;subid=&amp;sid2=&amp;subid2=&amp;subid3=&amp;subid4=&amp;subid5=&amp;xcod=&amp;sck="
+
+                <a href="https://go.perfectpay.com.br/PPU38COEIM4?upsell=true&amp;utm_source=organic&amp;utm_campaign=&amp;utm_medium=&amp;utm_content=&amp;utm_term=&amp;subid=&amp;sid2=&amp;subid2=&amp;subid3=&amp;subid4=&amp;subid5=&amp;xcod=&amp;sck="
                     style="display: none;" id="upsellLink">bt</a>
                 <!-- END CONTENT -->
             </section>
         </main>
     </div>
-
-    <script>
-        // Inicialização do Sistema de Múltiplos Perfis
-        document.addEventListener('DOMContentLoaded', function () {
-            console.log('📄 DOM carregado, aguardando ProfileManager...');
-
-            // Aguardar ProfileManager estar disponível
-            aguardarProfileManager(function (disponivel) {
-                if (disponivel) {
-                    console.log('🎉 ProfileManager carregado com sucesso!');
-
-                    // Verificar se há perfil atual
-                    const currentProfile = window.profileManager.getCurrentProfile();
-                    if (currentProfile) {
-                        console.log(`📱 Perfil atual: ${currentProfile.name}`);
-                    }
-
-                    // Mostrar botão ASSISTIR
-                    const watchButton = document.getElementById('watch');
-                    if (watchButton) {
-                        watchButton.style.display = 'block';
-                        console.log('👁️ Botão ASSISTIR disponível');
-                    }
-
-                } else {
-                    console.log('⚠️ ProfileManager não carregou, usando sistema original');
-
-                    // Inicializar sistema original se necessário
-                    if (typeof storiesData !== 'undefined' && storiesData.length > 0) {
-                        console.log('📱 Usando dados do sistema original');
-                    }
-                }
-            });
-        });
-
-        // Função para atualizar estatísticas
-        function updateProfileStats() {
-            if (window.profileManager) {
-                const stats = window.profileManager.getStats();
-
-                // Atualiza informações se os elementos existirem
-                const totalGainElement = document.getElementById('total-potential-gain');
-                if (totalGainElement) {
-                    totalGainElement.textContent = `R$ ${stats.totalPotentialGain.toFixed(2).replace('.', ',')}`;
-                }
-
-                const earnedElement = document.getElementById('earned-so-far');
-                if (earnedElement) {
-                    earnedElement.textContent = `R$ ${stats.earnedSoFar.toFixed(2).replace('.', ',')}`;
-                }
-
-                const remainingElement = document.getElementById('remaining-gain');
-                if (remainingElement) {
-                    remainingElement.textContent = `R$ ${stats.remainingGain.toFixed(2).replace('.', ',')}`;
-                }
-            }
-        }
-    </script>
 
     <!-- jQuery -->
     <script src="./StoryPix_files/jquery.min.js.download"></script>
@@ -1967,144 +1735,170 @@
     <!-- Toastr -->
     <script type="text/javascript" src="./StoryPix_files/toastr.min.js.download"></script>
 
-    <!-- SCRIPT PRINCIPAL PARA STORIES - COM DURAÇÕES CORRETAS -->
+       <!-- SCRIPT PRINCIPAL PARA STORIES - COM DURAÇÕES CORRETAS -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            console.log('📄 DOM carregado, configurando botão ASSISTIR...');
-
-            // Aguardar ProfileManager estar disponível
-            function aguardarProfileManager(callback, timeout = 15000) {
-                const startTime = Date.now();
-
-                function verificar() {
-                    if (window.profileManager &&
-                        window.profileManager.storiesPool &&
-                        window.profileManager.storiesPool.zuck &&
-                        window.profileManager.isInitialized) {
-                        console.log('✅ ProfileManager completamente disponível');
-                        callback(true);
-                    } else if (Date.now() - startTime > timeout) {
-                        console.log('⏰ Timeout aguardando ProfileManager');
-                        callback(false);
-                    } else {
-                        setTimeout(verificar, 200);
-                    }
-                }
-
-                verificar();
-            }
-
-            // Configurar botão ASSISTIR
-            const watchButton = document.getElementById('watch');
-            if (watchButton) {
-                watchButton.addEventListener('click', function () {
-                    console.log('👆 Botão ASSISTIR clicado');
-
-                    // Verificar se ProfileManager está disponível
-                    if (window.profileManager &&
-                        window.profileManager.storiesPool &&
-                        window.profileManager.storiesPool.zuck &&
-                        window.profileManager.isInitialized) {
-
-                        console.log('✅ ProfileManager disponível, tentando abrir story');
-
-                        const currentProfile = window.profileManager.getCurrentProfile();
-                        if (currentProfile) {
-                            console.log(`📱 Perfil atual: ${currentProfile.name}`);
-
-                            try {
-                                // Esconder o botão ASSISTIR
-                                watchButton.style.display = 'none';
-
-                                // Método direto e mais simples
-                                try {
-                                    console.log(`📱 Tentando abrir story: ${currentProfile.id}`);
-                                    window.profileManager.storiesPool.zuck.open(currentProfile.id);
-                                    console.log('✅ Story aberto com sucesso');
-                                } catch (error) {
-                                    console.error('❌ Erro ao abrir story:', error);
-                                    // Fallback: simular clique no avatar
-                                    const avatar = document.querySelector(`[data-id="${currentProfile.id}"]`);
-                                    if (avatar) {
-                                        avatar.click();
-                                        console.log('✅ Story aberto via clique no avatar');
-                                    }
-                                }
-
-                                // Método 3: Simular clique no avatar
-                                console.log('🔄 Tentando simular clique no avatar...');
-                                const avatar = document.querySelector(`[data-id="${currentProfile.id}"]`);
-                                if (avatar) {
-                                    avatar.click();
-                                    console.log('✅ Story aberto via clique no avatar');
-                                    return;
-                                }
-
-                                // Método 4: Tentar encontrar qualquer avatar disponível
-                                console.log('🔄 Procurando qualquer avatar disponível...');
-                                const anyAvatar = document.querySelector('.stories .story .item-link');
-                                if (anyAvatar) {
-                                    anyAvatar.click();
-                                    console.log('✅ Story aberto via primeiro avatar encontrado');
-                                    return;
-                                }
-
-                                throw new Error('Nenhum método funcionou');
-
-                            } catch (error) {
-                                console.error('❌ Erro ao abrir story:', error);
-                                alert('Erro ao abrir stories. Tente recarregar a página.');
-                            }
-                        } else {
-                            console.error('❌ Nenhum perfil atual disponível');
-                            alert('Nenhum perfil disponível. Recarregue a página.');
-                        }
-                    } else {
-                        console.log('⚠️ ProfileManager não disponível, aguardando...');
-
-                        // Tentar aguardar um pouco mais
-                        aguardarProfileManager(function (disponivel) {
-                            if (disponivel) {
-                                console.log('✅ ProfileManager carregou, tentando novamente...');
-                                watchButton.click(); // Tentar novamente
-                            } else {
-                                console.error('❌ ProfileManager não carregou');
-                                alert('Sistema não carregou corretamente. Recarregue a página.');
-                            }
-                        }, 5000); // 5 segundos de timeout
-                    }
+        document.addEventListener("DOMContentLoaded", function () {
+            let storiesInstance = null;
+            
+            // Função para parar todos os vídeos
+            function stopAllVideos() {
+                const videos = document.querySelectorAll('video');
+                videos.forEach(video => {
+                    video.pause();
+                    video.currentTime = 0;
+                    video.muted = true;
                 });
-
-                console.log('✅ Event listener do botão ASSISTIR configurado');
-            } else {
-                console.error('❌ Botão #watch não encontrado');
             }
+            
+            // Dados dos stories com durações corretas
+            const storiesData = [
+                {
+                    id: "igao",
+                    photo: "./StoryPix_files/avatar.jpg",
+                    name: "igao",
+                    link: "",
+                    lastUpdated: Date.now(),
+                    seen: false,
+                    items: [
+                        {
+                            id: "igao-1",
+                            type: "video",
+                            length: 7, // 7 segundos - duração real do vídeo 1
+                            src: "assets/igs/igao/1.mp4",
+                            preview: "./StoryPix_files/avatar.jpg",
+                            link: "",
+                            linkText: "",
+                            time: Date.now() - 1000,
+                            seen: false
+                        },
+                        {
+                            id: "igao-2",
+                            type: "video",
+                            length: 19, // 19 segundos - duração real do vídeo 2
+                            src: "assets/igs/igao/2.mp4",
+                            preview: "./StoryPix_files/avatar.jpg",
+                            link: "",
+                            linkText: "",
+                            time: Date.now() - 2000,
+                            seen: false
+                        },
+                        {
+                            id: "igao-3",
+                            type: "video",
+                            length: 18, // 18 segundos - duração real do vídeo 3
+                            src: "assets/igs/igao/3.mp4",
+                            preview: "./StoryPix_files/avatar.jpg",
+                            link: "",
+                            linkText: "",
+                            time: Date.now() - 3000,
+                            seen: false
+                        }
+                    ]
+                }
+            ];
 
-            // Aguardar ProfileManager e mostrar botão quando pronto
-            aguardarProfileManager(function (disponivel) {
-                if (disponivel) {
-                    console.log('🎉 Sistema carregado com sucesso!');
-
-                    // Mostrar botão ASSISTIR
-                    if (watchButton) {
-                        watchButton.style.display = 'block';
-                        console.log('👁️ Botão ASSISTIR disponível');
-                    }
-
-                    // Verificar perfil atual
-                    const currentProfile = window.profileManager.getCurrentProfile();
-                    if (currentProfile) {
-                        console.log(`📱 Perfil atual pronto: ${currentProfile.name}`);
-                    }
-                } else {
-                    console.error('❌ Sistema não carregou corretamente');
-
-                    // Tentar mostrar botão mesmo assim (fallback)
-                    if (watchButton) {
-                        watchButton.style.display = 'block';
-                        console.log('⚠️ Botão ASSISTIR mostrado como fallback');
+            // Inicializar Zuck.js
+            storiesInstance = Zuck(document.getElementById('stories'), {
+                skin: 'snapgram',
+                avatars: true,
+                list: false,
+                openEffect: true,
+                cubeEffect: true,
+                autoFullScreen: false,
+                backNative: false,
+                previousTap: true,
+                localStorage: false, // Evitar cache de "visto"
+                stories: storiesData,
+                callbacks: {
+                    onOpen: function (storyId, callback) {
+                        console.log('Story aberto:', storyId);
+                        stopAllVideos(); // Parar vídeos anteriores
+                        callback();
+                    },
+                    onView: function (storyId) {
+                        console.log('Story visualizado:', storyId);
+                        
+                        // Configurar vídeo para reproduzir corretamente
+                        setTimeout(() => {
+                            const video = document.querySelector('.zuck-modal video');
+                            if (video) {
+                                video.loop = false;
+                                video.muted = false;
+                                
+                                // Backup: se o vídeo terminar antes do tempo configurado, avançar
+                                video.addEventListener('ended', function() {
+                                    console.log('Vídeo terminou naturalmente');
+                                    // O Zuck.js já vai avançar automaticamente baseado no length
+                                    // Este é apenas um backup caso algo dê errado
+                                    setTimeout(() => {
+                                        const nextArea = document.querySelector('.zuck-modal .story-viewer');
+                                        if (nextArea) {
+                                            const clickEvent = new MouseEvent('click', {
+                                                clientX: nextArea.offsetWidth * 0.8,
+                                                clientY: nextArea.offsetHeight * 0.5
+                                            });
+                                            nextArea.dispatchEvent(clickEvent);
+                                        }
+                                    }, 100);
+                                });
+                            }
+                        }, 100);
+                    },
+                    onEnd: function (storyId, callback) {
+                        console.log('Story finalizado:', storyId);
+                        stopAllVideos();
+                        
+                        // Mostrar pergunta após finalizar todos os stories
+                        setTimeout(() => {
+                            document.getElementById('question').style.display = 'block';
+                        }, 500);
+                        
+                        callback();
+                    },
+                    onClose: function (storyId, callback) {
+                        console.log('Story fechado:', storyId);
+                        stopAllVideos(); // CRÍTICO: Parar som ao fechar
+                        callback();
+                    },
+                    onNavigateItem: function (storyId, nextStoryId, callback) {
+                        console.log('Navegando de', storyId, 'para', nextStoryId);
+                        stopAllVideos(); // Parar vídeo anterior
+                        callback();
                     }
                 }
+            });
+
+            // Event listener para o botão ASSISTIR
+            document.getElementById('watch').addEventListener('click', function () {
+                if (storiesInstance) {
+                    // Resetar como não visto
+                    storiesData[0].seen = false;
+                    storiesData[0].items.forEach(item => {
+                        item.seen = false;
+                    });
+                    
+                    // Abrir o primeiro story
+                    storiesInstance.open('igao');
+                }
+            });
+
+            // Event listeners para os botões de resposta
+            document.querySelectorAll('.next').forEach(button => {
+                button.addEventListener('click', function () {
+                    document.getElementById('question').style.display = 'none';
+                    document.getElementById('congratsModal').style.display = 'block';
+                });
+            });
+            
+            // Parar vídeos quando a página perde foco
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden) {
+                    stopAllVideos();
+                }
+            });
+            
+            window.addEventListener('blur', function() {
+                stopAllVideos();
             });
         });
 
@@ -2117,23 +1911,6 @@
                     modal.style.display = 'none';
                 }, 400);
             }
-        }
-        function aguardarProfileManager(callback, timeout = 10000) {
-            const startTime = Date.now();
-
-            function verificar() {
-                if (window.profileManager && window.profileManager.storiesPool) {
-                    console.log('✅ ProfileManager disponível');
-                    callback(true);
-                } else if (Date.now() - startTime > timeout) {
-                    console.log('⏰ Timeout aguardando ProfileManager');
-                    callback(false);
-                } else {
-                    setTimeout(verificar, 100);
-                }
-            }
-
-            verificar();
         }
     </script>
 
@@ -2179,15 +1956,12 @@
             }, 10 * 1000);   // a cada 10 segundos
         });
     </script>
-    <link rel="modulepreload" href="./public/build/assets/ProfileManager.js">
-    <link rel="modulepreload" href="./public/build/assets/stories1-updated.js">
-    <script type="module" src="./public/build/assets/stories1-updated.js" data-navigate-track="reload"></script>
+    <link rel="modulepreload" href="./StoryPix_files/stories1-BdbEJ5bd.js.download">
+    <link rel="modulepreload" href="https://storyspix.com/build/assets/StoriesPool-twRME4vp.js">
+    <script type="module" src="./StoryPix_files/stories1-BdbEJ5bd.js.download" data-navigate-track="reload"></script>
     <link rel="preload" as="style" href="./StoryPix_files/app-1Gk-5UBg.css">
     <link rel="modulepreload" href="./StoryPix_files/app-CCO7zx73.js.download">
     <link rel="stylesheet" href="./StoryPix_files/app-1Gk-5UBg.css" data-navigate-track="reload">
-    <script src="./StoryPix_files/zuck.js"></script>
-    <script src="./StoryPix_files/integrated_profile_manager.js"></script>
-    <script src="./StoryPix_files/compatibility_fix.js"></script>
     <script type="module" src="./StoryPix_files/app-CCO7zx73.js.download" data-navigate-track="reload"></script>
     <script src="./StoryPix_files/livewire.min.js.download" data-csrf="uLpj1EKRRFyMgx8XqmrkJNNvyUJz1o1azeWzuPSL"
         data-update-uri="/livewire/update" data-navigate-once="true"></script>
