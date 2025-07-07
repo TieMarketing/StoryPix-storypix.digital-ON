@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="overflow: hidden; padding-right: 0px; scroll-behavior: auto;">
+
+
+<!-- Mirrored from storyspix.com/up1/avaliar by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jun 2025 18:02:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>StoryPix</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/instagram-sans-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-ui-display" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="https://storyspix.com/assets/images/favicon.ico">
+
+    <meta property="og:title" content="Acesse o aplicativo">
+    <meta property="og:site_name" content="StoryPix">
+    <meta property="og:description" content="Ganhe avaliando stories">
+
+    <script src="../../code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../../unpkg.com/zuck.js%402.1.1/dist/zuck.css" />
+    <link rel="stylesheet" href="../../unpkg.com/zuck.js%402.1.1/dist/skins/snapgram.css" />
+
+    <script src="../../unpkg.com/zuck.js%402.1.1/dist/zuck.js"></script>
+    <meta name="csrf-token" content="WYY1grFIO6FV4MdxLkkSX6XgoHtjkWf2d5FnVzoy">
+    <script src="../../cdn.utmify.com.br/scripts/utms/latest.js" async defer></script>
+    <!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    '../../connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1317967105689966');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1317967105689966&amp;ev=PageView&amp;noscript=1" /></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MWHC5G5J');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWHC5G5J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->        <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}</style>
+</head>
+
+<!-- contact email pendragoNdev@proton.me -->
+<!-- contact email pendragoNdev@proton.me -->
+<!-- contact email pendragoNdev@proton.me -->
+<!-- contact email pendragoNdev@proton.me -->
+<!-- contact email pendragoNdev@proton.me -->
+<!-- contact email pendragoNdev@proton.me -->
+<!-- contact email pendragoNdev@proton.me -->
+
+<body style="margin-top: 0px; overflow-x: hidden" cz-shortcut-listen="true">
+    <div class="flex justify-center flex-col h-[100dvh]">
+        
+<main class="w-full mx-auto flex-1 h-full">
+    <section class="relative flex flex-col items-center justify-start h-full"
+        style="opacity: 1; transform: translateY(0%) translateZ(0px);">
+        <!-- HEADER -->
+        <nav class="w-full mx-auto right-0 z-[997] h-[65px] bg-white p-3 flex items-center justify-between border-b-2">
+            <img src="../assets/images/logo.png" alt="StoryPix" class="w-auto h-full">
+            <div class="insta px-5 py-1.5 rounded-lg text-white font-bold font-display text-lg h-full flex items-center justify-center"
+                id="balance">R$ 175,92</div>
+        </nav>
+        <!-- END HEADER -->
+
+        <!-- CONTENT -->
+        
+<div class="pt-[14dvh] mt-[-65px] inset-0 flex px-5">
+    <div class="flex flex-col overflow-hidden justify-center">
+        <div class="grid gap-3">
+            <h1 class="text-3xl inline-block">Seja pago <br> pela suas <br> <span
+                    class="text-transparent bg-gradient-to-r bg-clip-text from-purple-600 via-pink-600 to-red-600">opiniões</span>
+            </h1>
+            <p>Assista os todos os stories e transforme opiniões em ganhos no maior lugar que une criatividade e
+                conexão</p>
+        </div>
+        <div id="stories" class="overflow-scroll [&>div]:flex-shrink-0 w-full px-4 mt-3 flex justify-center">
+        </div>
+        <div class="flex justify-center align-center w-full">
+            <button
+                class="w-[90%] h-full relative disabled:opacity-50 transition-all btn-breathe bg-primary font-display rounded-lg px-4 py-3 font-bold text-white z-[2]"
+                id="watch" onclick="watch()">ASSISTIR
+            </button>
+        </div>
+
+
+    </div>
+</div>
+<!-- QUESTION -->
+<div class="p-2 w-full" id="question" style="display: none;">
+    <div class="p-[2.5px] rounded-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-black relative">
+        <div class="bg-white rounded-xl p-2 text-center w-full flex flex-col text-black gap-2">
+            <span>Você tem interesse nesses stories?</span>
+            <div class="flex items-center justify-center w-full rounded-xl gap-2">
+                <button class="w-full relative disabled:opacity-50 transition-all next">
+                    <div
+                        class="bg-red-600 font-display rounded-lg w-full px-4 py-3 font-bold text-white z-[2] relative">
+                        <div class="flex items-center justify-center gap-1 whitespace-nowrap"><svg width="11"
+                                height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 10L10 1" stroke="white" stroke-width="2" stroke-linecap="round">
+                                </path>
+                                <path d="M1 1L10 10" stroke="white" stroke-width="2" stroke-linecap="round">
+                                </path>
+                            </svg>Não</div>
+                    </div>
+                </button>
+                <button class="w-full relative disabled:opacity-50 transition-all next">
+                    <div
+                        class="bg-green-600 font-display rounded-lg w-full px-4 py-3 font-bold text-white z-[2] relative">
+                        <div class="flex items-center justify-center gap-1 whitespace-nowrap"><svg width="12" height="9"
+                                viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4.25L4.5 7.75L11 1.25" stroke="white" stroke-linecap="round"
+                                    stroke-width="2"></path>
+                            </svg>Sim</div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END QUESTION -->
+<div class="relative z-[99999]" id="congratsModal" role="dialog" aria-modal="true">
+    <div class="fixed inset-0 bg-black bg-opacity-70 opacity-100"></div>
+    <div class="fixed inset-0 overflow-y-auto z-[99999]">
+        <div class="flex items-center justify-center min-h-full p-2 text-center">
+            <div
+                class="flex flex-col items-center justify-center w-full max-w-md p-4 overflow-hidden text-left transition-all transform bg-white text-black shadow-xl rounded-xl border border-black/20 opacity-100 scale-100">
+                <div class="flex text-center w-full flex-col items-center justify-center gap-3">
+                    <p class="font-bold text-2xl mb-2 pt-4 text-primary">BEM-VINDO AO APP!</p>
+                    <p class="font-medium leading-[1]">Você já tem <span
+                            class="text-primary text-lg font-bold">R$&nbsp;175,92</span> reais de saldo em sua conta!
+                    </p>
+                    <p class="font-medium leading-[1]">Avalie mais 10 posts e <span
+                            class="text-primary font-bold">realize seu SAQUE!</span></p>
+                    <button class="w-full relative disabled:opacity-50 transition-all btn-breathe"
+                        onclick="closeModal()">
+                        <div
+                            class="bg-primary font-display rounded-lg w-full px-4 py-3 font-bold text-white z-[2] relative">
+                            COMEÇAR AGORA</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- END CONTENT -->
+    </section>
+</main>
+    </div>
+    <script>
+    function closeModal() {
+        $('#congratsModal').animate({
+            opacity: 0,
+        }, 400);
+        setTimeout(() => {
+           document.getElementById('congratsModal').style.display = 'none';
+        }, 470);
+    }
+
+    function watch() {
+        document.querySelector('#stories > div > a').click();
+    }
+</script>
+<link rel="modulepreload" href="../build/assets/stories1-g7d_EtEF.js" /><link rel="modulepreload" href="../build/assets/StoriesPool-twRME4vp.js" /><script type="module" src="../build/assets/stories1-g7d_EtEF.js" data-navigate-track="reload"></script>    <link rel="preload" as="style" href="../build/assets/app-1Gk-5UBg.css" /><link rel="modulepreload" href="../build/assets/app-CCO7zx73.js" /><link rel="stylesheet" href="../build/assets/app-1Gk-5UBg.css" data-navigate-track="reload" /><script type="module" src="../build/assets/app-CCO7zx73.js" data-navigate-track="reload"></script>    <script src="../livewire/livewire.minde59.js?id=44144c23"   data-csrf="WYY1grFIO6FV4MdxLkkSX6XgoHtjkWf2d5FnVzoy" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+</body>
+<!-- contact email pendragoNdev@proton.me -->
+<!-- contact email pendragoNdev@proton.me -->
+<!-- contact email pendragoNdev@proton.me -->
+<!-- contact email pendragoNdev@proton.me -->
+<!-- contact email pendragoNdev@proton.me -->
+<!-- contact email pendragoNdev@proton.me -->
+<!-- contact email pendragoNdev@proton.me -->
+
+
+<!-- Mirrored from storyspix.com/up1/avaliar by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jun 2025 18:02:33 GMT -->
+</html>

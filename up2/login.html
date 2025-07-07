@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STORYPIX - login</title>
+  <link rel="stylesheet" href="./login_files/login.css">
+
+<script>
+  var back_redirect_back_link = 'back.html';
+  history.pushState(null, '', location.href);
+  window.onpopstate = function (event) {
+    location.replace(back_redirect_back_link);
+    history.pushState(null, '', location.href);
+  };
+</script></head>
+
+
+<body>
+  <div class="container">
+    <div class="login-container">
+      <div class="logo">STORYPIX</div>
+      <form id="loginForm" onsubmit="return handleLogin(event)">
+        <div class="input-group">
+          <input type="text" id="username" placeholder="Seu nome de usuário" required="">
+        </div>
+        <button class="login-button" type="submit">Entrar</button>
+      </form>
+      <div class="divider">
+        <span class="line"></span>
+        <span class="text">Ganhe com sua opinião</span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <div class="footer">
+      <p>© 2024 StoryPix. Todos os direitos reservados.</p>
+    </div>
+  </div>
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+
+      const btn = document.querySelector('.login-button');
+      btn.textContent = 'Entrando...';
+      btn.style.background = '#6f6f6f';
+      btn.style.cursor = 'default';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 2000);
+
+      return false;
+    }
+  </script>
+  <script src="./login_files/utm.js.download"></script>
+
+</body></html>

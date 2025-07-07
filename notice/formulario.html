@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidatura - Avaliador de Stories | Storypix</title>
+    <meta name="description" content="Complete sua candidatura para se tornar um avaliador de stories e ganhar dinheiro extra.">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <!-- Background Gradient -->
+    <div class="background-gradient"></div>
+    
+    <!-- Header Simplificado -->
+    <header class="header">
+        <div class="container">
+            <div class="breadcrumb">
+                <span>TechNews Brasil</span>
+                <span class="separator">></span>
+                <span>Oportunidades</span>
+                <span class="separator">></span>
+                <span class="current">Candidatura</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Progress Indicator -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-text">
+                    <span id="progress-text">Etapa 1 de 2</span>
+                </div>
+            </div>
+
+            <!-- Form Card -->
+            <div class="form-card">
+                <!-- Gift Icon -->
+                <div class="gift-icon">
+                    🎁
+                </div>
+
+                <!-- Title Section -->
+                <div class="title-section">
+                    <h1>Complete sua Candidatura</h1>
+                    <h2>Processo Seletivo Exclusivo</h2>
+                    <p class="subtitle">Preencha os dados abaixo para garantir sua vaga como avaliador de stories</p>
+                </div>
+
+                <!-- Urgency Indicators -->
+                <div class="urgency-section">
+                    <div class="urgency-item">
+                        <span class="urgency-icon">👥</span>
+                        <span class="urgency-text">
+                            <span id="candidates-count">127</span> pessoas se candidataram hoje
+                        </span>
+                    </div>
+                    <div class="urgency-item">
+                        <span class="urgency-icon">📊</span>
+                        <span class="urgency-text">
+                            Vagas disponíveis: <span id="vacancy-percentage">73%</span>
+                        </span>
+                        <div class="vacancy-bar">
+                            <div class="vacancy-fill" id="vacancy-fill"></div>
+                        </div>
+                    </div>
+                    <div class="urgency-item timer-item">
+                        <span class="urgency-icon">⏰</span>
+                        <span class="urgency-text">
+                            Inscrições encerram em: <span id="countdown-timer">23:45:12</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <form class="application-form" id="application-form">
+                    <div class="form-group">
+                        <label for="fullName">Nome Completo *</label>
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullName" 
+                            required 
+                            placeholder="Digite seu nome completo"
+                            autocomplete="name"
+                        >
+                        <div class="error-message" id="fullName-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            placeholder="seu@email.com"
+                            autocomplete="email"
+                        >
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefone/WhatsApp (opcional)</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="(11) 99999-9999"
+                            autocomplete="tel"
+                        >
+                        <div class="error-message" id="phone-error"></div>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter" checked>
+                            <span class="checkmark"></span>
+                            <span class="checkbox-text">Aceito receber informações sobre novas oportunidades</span>
+                        </label>
+                    </div>
+
+                    <div class="legal-text">
+                        <p>🔒 Seus dados estão protegidos conforme a Lei Geral de Proteção de Dados (LGPD)</p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-button" id="submit-button">
+                        <span class="button-text">FINALIZAR CANDIDATURA E ACESSAR PLATAFORMA</span>
+                        <span class="button-icon">🚀</span>
+                    </button>
+
+                    <p class="redirect-info">
+                        Você será redirecionado para o aplicativo oficial do Storypix
+                    </p>
+                </form>
+
+                <!-- Benefits Reminder -->
+                <div class="benefits-section">
+                    <h3>🎯 Seus Benefícios Garantidos:</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">💰</span>
+                            <span class="benefit-text">R$ 50 de bônus imediato</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">⏰</span>
+                            <span class="benefit-text">Trabalhe no seu tempo livre</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📱</span>
+                            <span class="benefit-text">Apenas pelo celular</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">💳</span>
+                            <span class="benefit-text">Pagamentos via PIX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Modal -->
+            <div class="modal" id="success-modal">
+                <div class="modal-content">
+                    <div class="success-icon">✅</div>
+                    <h2>Candidatura Enviada com Sucesso!</h2>
+                    <p>Parabéns! Você foi aprovado no processo seletivo.</p>
+                    <p class="redirect-message">Redirecionando para o Storypix em <span id="redirect-countdown">5</span> segundos...</p>
+                    <button class="modal-button" onclick="redirectToStorypix()">
+                        ACESSAR STORYPIX AGORA
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 TechNews Brasil - Processo seletivo oficial Storypix</p>
+        </div>
+    </footer>
+
+    <script src="formulario.js"></script>
+</body>
+</html>
+
